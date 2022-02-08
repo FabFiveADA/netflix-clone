@@ -1,0 +1,414 @@
+@font-face { font-family: Roboto; src: url("Roboto-Regular.ttf"); }
+* { margin: 0px; padding: 0px; box-sizing: border-box; font-family: Roboto, sans-serif; }
+body{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+.site-banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.8),transparent);
+}
+.site-banner::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top,rgba(0,0,0,0.8),transparent);
+}
+.site-header{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 100;
+}
+.site-header a{
+    color: white;
+    background-color: red;
+    padding: 8px 18px;
+    border-radius: 6px;
+}
+.brand-container{
+    height: 40px;
+    width: 140px;
+    
+}
+.brand-container svg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.site-banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.banner-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-banner{
+    z-index: 100;
+
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.heading h2{
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+    width: 70%;
+}
+.heading h4{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.heading p{
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding: 10px 0px;
+    padding-bottom: 20px;
+}
+.get-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.get-email input{
+    padding: 10px 10px 0px 10px;
+    border: 1px solid gray;
+    font-size: 15px;
+    outline: none;
+    color: black;
+    min-width: 20vw;
+    height: 6vh;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+
+}
+.get-email a{
+    padding: 5px 10px 5px 10px;
+    border: 1px solid gray;
+    font-size: 25px;
+    background-color: red;
+    outline: none;
+    color: white;
+    min-width: 20vw;
+    height: 6vh;
+    justify-content: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.card1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-top: 8px solid rgb(32, 32, 32);
+    border-bottom: 8px solid rgb(32, 32, 32);
+}
+.text1{
+    color: white;
+    flex-basis: 40%;
+}
+.text1 h1{
+    font-size: 3.2rem;
+    line-height: 1.2px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    margin: 2rem;
+}
+.text1 h2{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: 2rem;
+}
+.img1{
+    flex-basis: 45%;
+}
+.img1 img{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 100;
+}
+.imgextra{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.vid{
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.vid1{
+    width: 100%;
+    height: 100%;
+}
+.text2{
+    color: white;
+    flex-basis: 55%;
+}
+.text2 h1{
+    font-size: 3.2rem;
+    padding-bottom: 10px;
+    margin: 2rem;
+}
+.text2 h2{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: 2rem;
+}
+.vid2{
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 54%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.faq{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 8px solid rgb(32, 32, 32);
+    border-bottom: 8px solid rgb(32, 32, 32);
+}
+.faq .title{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.faqs{
+    width: 27%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(32, 32, 32);
+    margin: 1rem 0rem;
+    height: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+.faqs svg{
+    width:1.5rem;
+}
+.faqend{
+    margin-bottom: 3rem;
+}
+.faq p{
+    margin: .5rem 0;
+}
+.faq form{
+    margin-bottom: 2rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    color: rgb(32, 32, 32);
+    border-top: 8px solid rgb(32, 32, 32);
+    border-bottom: 8px solid rgb(32, 32, 32);
+    padding: 3rem 6rem;
+}
+.head{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.arr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 1.5rem;
+    
+    margin-bottom: 2rem;
+}
+.arr ul{
+    list-style: none;
+}
+.arr li{
+    margin-bottom: 1rem;
+}
+.ending{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.signin{
+    z-index: 100;
+    padding: 3rem 3rem;
+    width: 30%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.signin h1{
+    color: white;
+    font-size: 2rem;
+    justify-content: left;
+    margin-bottom: 2rem;
+}
+.name-in{
+    background-color: rgb(32, 32, 32);
+    color: black;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+.name-in input{
+    width: 80%;
+    margin-left: 5px;
+    background-color: rgb(32, 32, 32);
+    color: black;
+    outline: none;
+    height: 3rem;
+    font-size: 1.2rem;
+    border: none;
+}
+.email-in{
+    background-color: rgb(32, 32, 32);
+    color: black;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+.email-in input{
+    width: 80%;
+    margin-left: 5px;
+    background-color: rgb(32, 32, 32);
+    color: black;
+    outline: none;
+    height: 3rem;
+    font-size: 1.2rem;
+    border: none;
+}
+.password-in{
+    background-color: rgb(32, 32, 32);
+    color: black;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+.password-in input{
+    width: 80%;
+    margin-left: 5px;
+    background-color: rgb(32, 32, 32);
+    color: black;
+    outline: none;
+    height: 3rem;
+    font-size: 1.2rem;
+    border: none;
+}
+.signin .lin{
+    color: white;
+    background-color: rgba(255, 0, 0, 0.3);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.para{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+.para p{
+    color:rgb(32, 32, 32);
+    margin-right: 15px;
+}
+.para a{
+    color: white;
+}
+.mov-banner{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    justify-content: left;
+    display: flex;
+    align-items: left;
+}
+.movie-banner{
+    color: white;
+    z-index: 100;
+    padding: 3rem 3rem;
+    padding-top: 20rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.movie-banner h1{
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+.movie-banner p{
+    color: antiquewhite;
+}
+.movie-banner button{
+    padding: 5px;
+    border-radius: 2px;
+    margin-top: 2rem;
+    width: 20%;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+}
+.list h3{
+    margin: 2rem;
+}
+.movie-cards{
+    display: flex;
+    flex-direction: row;
+}
+.movie-card{
+    width: 15%;
+    margin: 1rem;
+}
+.movie-card img{
+    width: 100%;
+}
